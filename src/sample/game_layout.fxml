@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="781.0" prefWidth="1172.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <GridPane fx:id="ganetable" layoutX="21.0" layoutY="32.0" prefHeight="700.0" prefWidth="750.0" style="-fx-background-color: black;" onMouseClicked="#ListNotifi">
+      </GridPane>
+      <ListView fx:id="listIndicesH" layoutX="832.0" layoutY="71.0" prefHeight="241.0" prefWidth="280.0" />
+      <ListView fx:id="listIndeceV" layoutX="830.0" layoutY="350.0" prefHeight="241.0" prefWidth="287.0" />
+      <Label layoutX="870.0" layoutY="302.0" prefHeight="48.0" prefWidth="214.0" text="Indices Verticaux">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Label layoutX="865.0" layoutY="23.0" prefHeight="48.0" prefWidth="224.0" text="Indices Horizontaux">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Label layoutX="831.0" layoutY="591.0" prefHeight="48.0" prefWidth="79.0" text="Niveau :">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="labelNiveau" layoutX="819.0" layoutY="639.0" prefHeight="39.0" prefWidth="280.0" text="- - ">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Button fx:id="butonQuiter" layoutX="986.0" layoutY="693.0" mnemonicParsing="false" onMouseClicked="#GameExit" prefHeight="48.0" prefWidth="112.0" text="Quiter" />
+      <Button fx:id="butonReset" layoutX="839.0" layoutY="693.0" mnemonicParsing="false" onMouseClicked="#GameReset" prefHeight="48.0" prefWidth="120.0" text="Reset" />
+      <Button fx:id="solutionGame" layoutX="1080.0" layoutY="608.0" mnemonicParsing="false" onMouseClicked="#showSolution" text="Solution" />
+   </children>
+</AnchorPane>
